@@ -1,17 +1,35 @@
 package com.example.mvhwhinnery.spacetrucker;
 
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RelativeLayout;
 
 
 public class StartMenu extends ActionBarActivity {
+
+    Button btn1;
+    RelativeLayout back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_menu);
+
+        btn1 = (Button) findViewById(R.id.btn1);
+        back = (RelativeLayout) findViewById(R.id.backround);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                back.setBackgroundColor(Color.parseColor("#00ff00"));
+            }
+        });
+
     }
 
 
