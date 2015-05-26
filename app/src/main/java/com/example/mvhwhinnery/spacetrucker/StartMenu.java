@@ -15,6 +15,7 @@ public class StartMenu extends ActionBarActivity {
 
     Button btn1;
     RelativeLayout back;
+    Button btn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,13 @@ public class StartMenu extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 back.setBackgroundColor(Color.parseColor("#00ff00"));
+            }
+        });
+        btn2 = (Button) findViewById(R.id.button2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                back.setBackgroundColor(Color.RED);
             }
         });
 
