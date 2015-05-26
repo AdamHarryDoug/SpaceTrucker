@@ -9,7 +9,8 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
 
     tools:context=".StartMenu"
-    android:id="@+id/backround">
+    android:id="@+id/backround"
+    android:background="#ff1fd4ff">
 
     <TextView
         android:text="Space Trucker"
@@ -17,23 +18,18 @@
         android:layout_height="wrap_content"
         android:textSize="125sp"
         android:gravity="center"
-        android:layout_gtavity="center"/>
+        android:layout_gtavity="center"
+        android:textColor="#ffffffff"
+        android:id="@+id/textView" />
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button 1"
-        android:layout_marginTop="150dp"/>
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button 2"
-        android:id="@+id/button2"
-        android:layout_marginTop="150dp"
-        android:layout_below="@+id/btn1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_gtavity="center"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
+        android:textSize="50sp"/>
 
 </RelativeLayout>
