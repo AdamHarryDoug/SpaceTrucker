@@ -23,6 +23,7 @@ public class StartMenu extends ActionBarActivity {
         setContentView(R.layout.activity_start_menu);
 
         btn1 = (Button) findViewById(R.id.btn1);
+        back.setBackgroundColor(Color.BLUE);
         back = (RelativeLayout) findViewById(R.id.backround);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
