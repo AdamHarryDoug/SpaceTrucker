@@ -22,7 +22,7 @@ public class StartMenu extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_menu);
 
-        btn1 = (Button) findViewById(R.id.btn1);
+        btn1 = (Button) findViewById(R.id.btnNew);
         back.setBackgroundColor(Color.BLUE);
         back = (RelativeLayout) findViewById(R.id.backround);
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -31,13 +31,7 @@ public class StartMenu extends ActionBarActivity {
                 back.setBackgroundColor(Color.parseColor("#00ff00"));
             }
         });
-        btn2 = (Button) findViewById(R.id.button2);
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                back.setBackgroundColor(Color.RED);
-            }
-        });
+
 
     }
 
