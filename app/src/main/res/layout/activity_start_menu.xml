@@ -10,26 +10,27 @@
 
     tools:context=".StartMenu"
     android:id="@+id/backround"
-    android:background="#ff1fd4ff">
+    android:background="@drawable/spaceship">
 
     <TextView
         android:text="Space Trucker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="125sp"
+        android:textSize="100sp"
         android:gravity="center"
-        android:layout_gtavity="center"
-        android:textColor="#ffffffff"
-        android:id="@+id/textView" />
+        android:layout_gtavity="right"
+        android:textColor="#ff0e36c2"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button 1"
+        android:text="Start"
         android:layout_gtavity="center"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="175dp"
-        android:textSize="50sp"/>
+        android:textSize="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
