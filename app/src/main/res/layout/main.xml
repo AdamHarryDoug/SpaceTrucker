@@ -23,7 +23,6 @@
         android:text="$$$$$$"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/textView2"
-        android:layout_margin =
         android:layout_row="0"
         android:layout_column="1" />
 
@@ -57,7 +56,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/shop"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/textView3"
         android:text="Hanger"
         android:textSize="25dp"
         android:textColor="#ff404040"
