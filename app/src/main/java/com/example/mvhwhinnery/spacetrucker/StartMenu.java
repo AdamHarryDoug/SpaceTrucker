@@ -30,7 +30,12 @@ public class StartMenu extends ActionBarActivity {
                 Intent myIntent = new Intent(StartMenu.this, Main.class);
                 StartMenu.this.startActivity(myIntent);
             }
-        });
+        }
+        );
+
+
+
+        Button popupButton = (Button)FindViewById.id.button_popup)
 
 
     }
