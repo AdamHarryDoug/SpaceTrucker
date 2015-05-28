@@ -23,7 +23,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btnNew"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Game"
@@ -40,10 +40,10 @@
         android:text="Load Game"
         android:id="@+id/button"
         android:textSize="40dp"
-        android:layout_alignBottom="@+id/btn1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:background="#ff1809ff"
-        android:textColor="#ffffffff" />
+        android:textColor="#ffffffff"
+        android:layout_alignTop="@+id/btnNew"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
