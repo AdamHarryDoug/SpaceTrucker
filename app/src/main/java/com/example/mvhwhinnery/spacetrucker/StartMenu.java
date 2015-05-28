@@ -1,5 +1,6 @@
 package com.example.mvhwhinnery.spacetrucker;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -13,21 +14,21 @@ import android.widget.RelativeLayout;
 
 public class StartMenu extends ActionBarActivity {
 
-    Button btn1;
+    Button btnNew;
     RelativeLayout back;
-    Button btn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_menu);
 
-        btn1 = (Button) findViewById(R.id.btnNew);
+        btnNew = (Button) findViewById(R.id.btnNew);
         back = (RelativeLayout) findViewById(R.id.backround);
-        btn1.setOnClickListener(new View.OnClickListener() {
+        btnNew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                back.setBackgroundColor(Color.parseColor("#00ff00"));
+                Intent myIntent = new Intent(StartMenu.this, Main.class);
+                StartMenu.this.startActivity(myIntent);
             }
         });
 
