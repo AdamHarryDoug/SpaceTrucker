@@ -19,7 +19,7 @@
         android:textSize="100sp"
         android:gravity="center"
         android:layout_gtavity="right"
-        android:textColor="#ff0e36c2"
+        android:textColor="#ff0000c8"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
