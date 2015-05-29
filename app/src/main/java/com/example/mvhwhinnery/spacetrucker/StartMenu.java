@@ -27,7 +27,7 @@ public class StartMenu extends ActionBarActivity {
         btnNew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(StartMenu.this, Main.class);
+                Intent myIntent = new Intent(StartMenu.this, MainActivity.class);
                 StartMenu.this.startActivity(myIntent);
 
             }
