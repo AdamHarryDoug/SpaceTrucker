@@ -10,6 +10,13 @@ public class Planet
     private String name,spec;
     ArrayList<Cargo> cargo = new ArrayList<Cargo>();
 
+    Planet(String name,String spec, ArrayList<Cargo> cargo)
+    {
+        this.name = name;
+        this.spec = spec;
+        this.cargo = cargo;
+    }
+
     public void setCargo(ArrayList<Cargo> cargo) {
         this.cargo = cargo;
     }

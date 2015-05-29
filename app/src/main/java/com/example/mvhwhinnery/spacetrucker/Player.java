@@ -14,7 +14,6 @@ public class Player
         uec = uecin;
         this.pShip = pShip;
         this.name = name;
-
     }
 
 
