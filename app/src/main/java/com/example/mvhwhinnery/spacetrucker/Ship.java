@@ -11,6 +11,15 @@ public class Ship
     private int cargoSize,defence,fuel;
     ArrayList<Cargo> cargo = new ArrayList<Cargo>();
 
+    Ship(String name, int cargoSize,int defence,int fuel, ArrayList<Cargo> cargo)
+    {
+        this.sName = name;
+        this.cargoSize = cargoSize;
+        this.defence = defence;
+        this.fuel = fuel;
+        this.cargo = cargo;
+    }
+
 
     public void setCargoSize(int cargoSize) {
         this.cargoSize = cargoSize;

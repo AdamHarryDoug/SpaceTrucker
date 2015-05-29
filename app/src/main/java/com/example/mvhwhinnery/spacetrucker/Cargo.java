@@ -8,6 +8,13 @@ public class Cargo
     private String cName;
     private int basePrice;
 
+    Cargo(String cName, int basePrice)
+    {
+        this.cName = cName;
+        this.basePrice = basePrice;
+    }
+
+
     public void setBasePrice(int basePrice) {
         this.basePrice = basePrice;
     }
