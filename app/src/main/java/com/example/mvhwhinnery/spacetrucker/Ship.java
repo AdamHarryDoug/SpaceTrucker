@@ -1,5 +1,7 @@
 package com.example.mvhwhinnery.spacetrucker;
 
+import java.util.ArrayList;
+
 /**
  * Created by mv.awooten on 5/28/2015.
  */
@@ -7,6 +9,8 @@ public class Ship
 {
     private String sName = "";
     private int cargoSize,defence,fuel;
+    ArrayList<Cargo> cargo = new ArrayList<Cargo>();
+
 
     public void setCargoSize(int cargoSize) {
         this.cargoSize = cargoSize;
@@ -38,5 +42,13 @@ public class Ship
 
     public String getsName() {
         return sName;
+    }
+
+    public ArrayList<Cargo> getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(ArrayList<Cargo> cargo) {
+        this.cargo = cargo;
     }
 }
