@@ -9,6 +9,14 @@ public class Player
     private Ship pShip;
     private String name;
 
+    Player(int uecin, Ship pShip, String name)
+    {
+        uec = uecin;
+        this.pShip = pShip;
+        this.name = name;
+
+    }
+
 
 
     public void setUec(int uecin)

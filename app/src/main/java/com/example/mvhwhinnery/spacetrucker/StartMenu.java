@@ -29,6 +29,7 @@ public class StartMenu extends ActionBarActivity {
             public void onClick(View v) {
                 Intent myIntent = new Intent(StartMenu.this, Main.class);
                 StartMenu.this.startActivity(myIntent);
+
             }
         }
         );
