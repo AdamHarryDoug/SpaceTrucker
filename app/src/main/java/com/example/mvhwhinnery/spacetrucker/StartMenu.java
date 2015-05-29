@@ -36,7 +36,7 @@ public class StartMenu extends ActionBarActivity {
 
 
 
-        Button popupButton = (Button)FindViewById.id.button_popup)
+
 
 
     }

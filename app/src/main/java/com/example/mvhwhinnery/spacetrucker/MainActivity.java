@@ -3,7 +3,11 @@ package com.example.mvhwhinnery.spacetrucker;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.PopupMenu;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +16,17 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button popupButton = (Button)findViewById(R.id.PlanetInfo);
+        popupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu popupMenu = new PopupMenu(getApplicationContext(), v);
+                MenuInflater menuInflater = popupMenu.getMenuInflater();
+                popupMenu.inflate(R.menu.menu_main);
+                popupMenu.show();
+            }
+        });
     }
 
 
