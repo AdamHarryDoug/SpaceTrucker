@@ -60,4 +60,18 @@ public class Ship
     public void setCargo(ArrayList<Cargo> cargo) {
         this.cargo = cargo;
     }
+
+    public void addCargo(ArrayList<Cargo> cargoin) {
+        ArrayList<Cargo> temp = new ArrayList<Cargo>();
+        temp = getCargo();
+        if ((temp.size() + cargoin.size()) <= getCargoSize()) ;
+        {
+
+            for (int i = 0; i < cargoin.size(); i++) {
+                temp.add(cargoin.get(i));
+                setCargo(temp);
+            }
+        }
+
+    }
 }
