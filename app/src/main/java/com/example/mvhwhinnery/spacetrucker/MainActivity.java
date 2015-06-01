@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.PopupMenu;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -23,14 +24,21 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button popupButton = (Button)findViewById(R.id.PlanetInfo);
+        final Button popupButton = (Button)findViewById(R.id.PlanetInfo);
         popupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 PopupMenu popupMenu = new PopupMenu(getApplicationContext(), v);
-                MenuInflater menuInflater = popupMenu.getMenuInflater();
+                //MenuInflater menuInflater = popupMenu.getMenuInflater();
                 popupMenu.inflate(R.menu.menu_main);
                 popupMenu.show();
+                //popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+                //    @Override
+                //    public boolean onMenuItemClack(MenuItem item){
+                //        Toast.makeText(getApplicationContext().item.toString(), Toast.LENGTH_SHORT).show();
+                //        return false;
+                //    }
+                //});
             }
         });
     }
