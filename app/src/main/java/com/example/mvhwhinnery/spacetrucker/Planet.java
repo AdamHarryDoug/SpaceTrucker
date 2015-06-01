@@ -42,7 +42,7 @@ public class Planet
     }
 
     public void addCargo(ArrayList<Cargo> cargoin) {
-        ArrayList<Cargo> temp = new ArrayList<Cargo>();
+        ArrayList<Cargo> temp;
         temp = getCargo();
         for (int i = 0; i < cargoin.size(); i++) {
                 temp.add(cargoin.get(i));

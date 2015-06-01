@@ -12,6 +12,12 @@ import android.widget.PopupMenu;
 
 public class MainActivity extends ActionBarActivity {
 
+    private Planet p1 = new Planet("Aquarius","water",null);
+    private Planet p2 = new Planet("Golden pastures", "crops", null);
+    private Planet p3 = new Planet("SmokeyTown", "industrial", null);
+    private Planet p4 = new Planet("Woodlands", "lumber",null);
+    private Planet p5 = new Planet("Mines", "minerals", null);
+    private Ship pShip = new Ship("Van",300,2,300,null);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
