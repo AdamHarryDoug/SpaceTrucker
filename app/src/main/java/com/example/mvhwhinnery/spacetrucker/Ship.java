@@ -64,7 +64,7 @@ public class Ship
     public void addCargo(ArrayList<Cargo> cargoin) {
         ArrayList<Cargo> temp = new ArrayList<Cargo>();
         temp = getCargo();
-        if ((temp.size() + cargoin.size()) <= getCargoSize()) ;
+        if ((temp.size() + cargoin.size()) <= getCargoSize())
         {
 
             for (int i = 0; i < cargoin.size(); i++) {

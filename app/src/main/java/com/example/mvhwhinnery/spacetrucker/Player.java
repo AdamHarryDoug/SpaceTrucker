@@ -30,4 +30,14 @@ public class Player
         return pShip;
     }
 
+    public void removeUEC(int uecout)
+    {
+        uec = uec - uecout;
+    }
+
+    public void addUEC(int uec)
+    {
+        this.uec = this.uec + uec;
+    }
+
 }

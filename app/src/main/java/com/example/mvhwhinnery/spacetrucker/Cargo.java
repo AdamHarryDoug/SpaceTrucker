@@ -7,6 +7,7 @@ public class Cargo
 {
     private String cName;
     private int basePrice;
+    private int realPrice;
 
     Cargo(String cName, int basePrice)
     {
@@ -29,5 +30,13 @@ public class Cargo
 
     public String getcName() {
         return cName;
+    }
+
+    public void setRealPrice(int realPrice) {
+        this.realPrice = realPrice;
+    }
+
+    public int getRealPrice() {
+        return realPrice;
     }
 }
