@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.PopupMenu;
 import android.widget.Toast;
@@ -22,8 +23,8 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
-
         final Button popupMars = (Button)findViewById(R.id.Mars);
         popupMars.setOnClickListener(new View.OnClickListener() {
             @Override

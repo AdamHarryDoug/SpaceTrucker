@@ -8,6 +8,7 @@ import android.text.Layout;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
@@ -20,7 +21,11 @@ public class StartMenu extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_start_menu);
+
+
+
 
         btnNew = (Button) findViewById(R.id.btnNew);
         back = (RelativeLayout) findViewById(R.id.backround);
