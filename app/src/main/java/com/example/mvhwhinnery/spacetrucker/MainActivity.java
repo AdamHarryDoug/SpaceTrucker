@@ -24,8 +24,76 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Button popupButton = (Button)findViewById(R.id.PlanetInfo);
-        popupButton.setOnClickListener(new View.OnClickListener() {
+        final Button popupMars = (Button)findViewById(R.id.Mars);
+        popupMars.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu popupMenu = new PopupMenu(getApplicationContext(), v);
+                //MenuInflater menuInflater = popupMenu.getMenuInflater();
+                popupMenu.inflate(R.menu.menu_main);
+                popupMenu.show();
+                //popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+                //    @Override
+                //    public boolean onMenuItemClack(MenuItem item){
+                //        Toast.makeText(getApplicationContext().item.toString(), Toast.LENGTH_SHORT).show();
+                //        return false;
+                //    }
+                //});
+            }
+        });
+        final Button popupEarth = (Button)findViewById(R.id.Earth);
+        popupEarth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu popupMenu = new PopupMenu(getApplicationContext(), v);
+                //MenuInflater menuInflater = popupMenu.getMenuInflater();
+                popupMenu.inflate(R.menu.menu_main);
+                popupMenu.show();
+                //popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+                //    @Override
+                //    public boolean onMenuItemClack(MenuItem item){
+                //        Toast.makeText(getApplicationContext().item.toString(), Toast.LENGTH_SHORT).show();
+                //        return false;
+                //    }
+                //});
+            }
+        });
+        final Button popupRed = (Button)findViewById(R.id.Red);
+        popupRed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu popupMenu = new PopupMenu(getApplicationContext(), v);
+                //MenuInflater menuInflater = popupMenu.getMenuInflater();
+                popupMenu.inflate(R.menu.menu_main);
+                popupMenu.show();
+                //popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+                //    @Override
+                //    public boolean onMenuItemClack(MenuItem item){
+                //        Toast.makeText(getApplicationContext().item.toString(), Toast.LENGTH_SHORT).show();
+                //        return false;
+                //    }
+                //});
+            }
+        });
+        final Button popupGreen = (Button)findViewById(R.id.Green);
+        popupGreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu popupMenu = new PopupMenu(getApplicationContext(), v);
+                //MenuInflater menuInflater = popupMenu.getMenuInflater();
+                popupMenu.inflate(R.menu.menu_main);
+                popupMenu.show();
+                //popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+                //    @Override
+                //    public boolean onMenuItemClack(MenuItem item){
+                //        Toast.makeText(getApplicationContext().item.toString(), Toast.LENGTH_SHORT).show();
+                //        return false;
+                //    }
+                //});
+            }
+        });
+        final Button popupPurple = (Button)findViewById(R.id.Purple);
+        popupPurple.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 PopupMenu popupMenu = new PopupMenu(getApplicationContext(), v);
