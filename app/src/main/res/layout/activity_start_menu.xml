@@ -16,10 +16,11 @@
         android:text="Space Trucker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="100sp"
+        android:textSize="60dp"
         android:gravity="center"
-        android:textColor="#ff0000c8"
+        android:textColor="#ffffffff"
         android:id="@+id/textView"
+        android:background="#ff000000"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
     <Button
@@ -28,7 +29,7 @@
         android:layout_height="wrap_content"
         android:text="Start"
         android:textSize="40dp"
-        android:background="#ff1809ff"
+        android:background="#ff000000"
         android:textColor="#ffffffff"
         android:layout_above="@+id/editText"
         android:layout_alignLeft="@+id/editText"
@@ -40,7 +41,7 @@
         android:text="Load Game"
         android:id="@+id/button"
         android:textSize="40dp"
-        android:background="#ff1809ff"
+        android:background="#ff000000"
         android:textColor="#ffffffff"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true" />
@@ -63,7 +64,7 @@
         android:text="Create Game"
         android:id="@+id/createGame"
         android:textSize="40dp"
-        android:background="#ff1809ff"
+        android:background="#ff000000"
         android:textColor="#ffffffff"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true" />
