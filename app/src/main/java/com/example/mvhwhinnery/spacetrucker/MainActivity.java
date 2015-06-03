@@ -16,9 +16,8 @@ import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
-    SharedPreferences prefs = this.getSharedPreferences(
-            "com.example.mvhwhinnery.spacetrucker", Context.MODE_PRIVATE);
-    String nameKey = "com.example.mvhwhinnery.spacetrucker.playerName";
+
+
 
 
     private Planet p1 = new Planet("Aquarius","water",null);

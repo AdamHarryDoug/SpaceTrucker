@@ -1,6 +1,8 @@
 package com.example.mvhwhinnery.spacetrucker;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -35,6 +37,9 @@ public class StartMenu extends ActionBarActivity {
         btnNew.setOnClickListener(new View.OnClickListener() {
              @Override
                   public void onClick(View v) {
+                 SharedPreferences prefs = getSharedPreferences("data", Context.MODE_PRIVATE);
+                 SharedPreferences.Editor editor = getSharedPreferences("data",Context.MODE_PRIVATE).edit();
+                 editor.putString("name",txtEdit.getText().toString());
                  playerName = txtEdit.getText().toString();
                        Intent myIntent = new Intent(StartMenu.this, MainActivity.class);
                        StartMenu.this.startActivity(myIntent);
