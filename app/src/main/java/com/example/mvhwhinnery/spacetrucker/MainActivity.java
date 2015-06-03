@@ -1,5 +1,7 @@
 package com.example.mvhwhinnery.spacetrucker;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,6 +15,11 @@ import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    SharedPreferences prefs = this.getSharedPreferences(
+            "com.example.mvhwhinnery.spacetrucker", Context.MODE_PRIVATE);
+    String nameKey = "com.example.mvhwhinnery.spacetrucker.playerName";
+
 
     private Planet p1 = new Planet("Aquarius","water",null);
     private Planet p2 = new Planet("Golden pastures", "crops", null);
@@ -29,6 +36,7 @@ public class MainActivity extends ActionBarActivity {
         popupMars.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 PopupMenu popupMenu = new PopupMenu(getApplicationContext(), v);
                 //MenuInflater menuInflater = popupMenu.getMenuInflater();
                 popupMenu.inflate(R.menu.menu_main);

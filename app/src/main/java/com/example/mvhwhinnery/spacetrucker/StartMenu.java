@@ -18,6 +18,8 @@ public class StartMenu extends ActionBarActivity {
 
     Button btnNew;
     RelativeLayout back;
+    public  String playerName;
+    EditText txtEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class StartMenu extends ActionBarActivity {
         btnNew.setOnClickListener(new View.OnClickListener() {
              @Override
                   public void onClick(View v) {
+                 playerName = txtEdit.getText().toString();
                        Intent myIntent = new Intent(StartMenu.this, MainActivity.class);
                        StartMenu.this.startActivity(myIntent);
 
@@ -46,7 +49,7 @@ public class StartMenu extends ActionBarActivity {
             @Override
             public void onClick(View v)
             {
-                EditText txtEdit = (EditText)findViewById(R.id.editText);
+                txtEdit = (EditText)findViewById(R.id.editText);
                 txtEdit.setVisibility(View.VISIBLE);
                 //Button theButton = (Button)findViewById(R.id.createGame);
                 btnNew.setVisibility(View.VISIBLE);
