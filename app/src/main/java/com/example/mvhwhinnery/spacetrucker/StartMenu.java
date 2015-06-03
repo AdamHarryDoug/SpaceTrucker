@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RelativeLayout;
 
 
@@ -30,14 +31,29 @@ public class StartMenu extends ActionBarActivity {
         btnNew = (Button) findViewById(R.id.btnNew);
         back = (RelativeLayout) findViewById(R.id.backround);
         btnNew.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(StartMenu.this, MainActivity.class);
-                StartMenu.this.startActivity(myIntent);
+             @Override
+                  public void onClick(View v) {
+                       Intent myIntent = new Intent(StartMenu.this, MainActivity.class);
+                       StartMenu.this.startActivity(myIntent);
 
-            }
-        }
+                  }
+             }
         );
+        //Creation of the button that makes the name field and start new game button visible (previously invisible)
+        final Button createGame = (Button)findViewById(R.id.createGame);
+        createGame.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                EditText txtEdit = (EditText)findViewById(R.id.editText);
+                txtEdit.setVisibility(View.VISIBLE);
+                //Button theButton = (Button)findViewById(R.id.createGame);
+                btnNew.setVisibility(View.VISIBLE);
+                createGame.setVisibility(View.INVISIBLE);
+            }
+        });
+
     }
 
 

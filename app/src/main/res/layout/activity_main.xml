@@ -29,8 +29,8 @@
         android:gravity="left"
         android:textColor="#ffffffff"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/button3"
-        android:layout_toEndOf="@+id/button3" />
+        android:layout_toLeftOf="@+id/Mars"
+        android:layout_marginRight="42dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -39,10 +39,9 @@
         android:text="The Olsonator"
         android:id="@+id/textView4"
         android:gravity="left"
+        android:textColor="#ffffffff"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/PlanetInfo"
-        android:layout_alignEnd="@+id/PlanetInfo"
-        android:textColor="#ffffffff" />
+        android:layout_alignParentRight="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -69,17 +68,8 @@
         android:layout_height="wrap_content"
         android:text="Store"
         android:id="@+id/button3"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Planet Info"
-        android:id="@+id/PlanetInfo"
-        android:layout_alignBottom="@+id/button3"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignParentRight="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -87,25 +77,23 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Ryan Olson"
         android:id="@+id/textView6"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/button3"
-        android:layout_toStartOf="@+id/button3"
-        android:textColor="#ffffffff" />
+        android:textColor="#ffffffff"
+        android:layout_above="@+id/Purple"
+        android:layout_toRightOf="@+id/Red" />
 
     <Button
-        android:layout_width="89dp"
-        android:layout_height="72dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
         android:text="Greeny"
         android:id="@+id/Green"
         android:background="#00ffffff"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:textColor="#ffffffff"
-        android:layout_marginRight="65dp"
         android:layout_marginEnd="65dp"
-        android:layout_marginBottom="43dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_marginBottom="62dp"
         android:layout_above="@+id/Mars"
-        android:layout_alignRight="@+id/PlanetInfo"
-        android:layout_alignEnd="@+id/PlanetInfo" />
+        android:layout_alignRight="@+id/textView4" />
 
     <Button
         style="@style/Widget.AppCompat.Button.Borderless"
@@ -121,17 +109,16 @@
 
     <Button
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="110dp"
+        android:layout_width="100dp"
         android:layout_height="100dp"
         android:text="Earthy"
         android:id="@+id/Earth"
         android:background="#00ffffff"
         android:textColor="#ffffffff"
-        android:layout_marginLeft="43dp"
         android:layout_marginStart="43dp"
         android:layout_alignTop="@+id/Purple"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3" />
+        android:layout_alignRight="@+id/Mars"
+        android:layout_marginRight="43dp" />
 
     <Button
         style="@style/Widget.AppCompat.Button.Borderless"
@@ -140,11 +127,10 @@
         android:text="Marsy"
         android:id="@+id/Mars"
         android:background="#00ffffff"
-        android:layout_above="@+id/PlanetInfo"
-        android:layout_toLeftOf="@+id/Green"
-        android:layout_toStartOf="@+id/Green"
-        android:layout_marginRight="30dp"
-        android:layout_marginEnd="30dp" />
+        android:layout_marginEnd="30dp"
+        android:layout_above="@+id/button3"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_marginRight="71dp" />
 
     <Button
         style="@style/Widget.AppCompat.Button.Borderless"
@@ -155,6 +141,15 @@
         android:background="#00ffffff"
         android:textColor="#ffffffff"
         android:layout_alignTop="@+id/Mars"
-        android:layout_toRightOf="@+id/textView5"
-        android:layout_toEndOf="@+id/textView5" />
+        android:layout_toRightOf="@+id/Purple" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="La Planeta del Olson"
+        android:id="@+id/textView7"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/Earth"
+        android:textColor="#ffffffff" />
 </RelativeLayout>
