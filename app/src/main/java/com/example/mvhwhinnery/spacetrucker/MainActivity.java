@@ -11,14 +11,18 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.PopupMenu;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
 
 
-
-
+    SharedPreferences sharedPreferences = getSharedPreferences("data",Context.MODE_PRIVATE);
+    private TextView txtName =(TextView) findViewById(R.id.playerName);
+    private TextView txtMoney = (TextView) findViewById(R.id.money);
+    private TextView txtShip = (TextView) findViewById(R.id.ship);
+    private TextView txtLocation = (TextView) findViewById(R.id.location);
 
     private Planet p1 = new Planet("Aquarius","water",null);
     private Planet p2 = new Planet("Golden pastures", "crops", null);
@@ -26,12 +30,22 @@ public class MainActivity extends ActionBarActivity {
     private Planet p4 = new Planet("Woodlands", "lumber",null);
     private Planet p5 = new Planet("Mines", "minerals", null);
     private Ship pShip = new Ship("Van",300,2,300,null);
+    private Player player = new Player(10000,pShip,sharedPreferences.getString("name",""));
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
+
         final Button popupMars = (Button)findViewById(R.id.Mars);
+
+        txtName.setText(player.getName());
+        txtMoney.setText(player.getUec());
+        txtShip.setText(player.getpShip().getsName());
+        txtLocation.setText(player.getLocation());
+
+
+
         popupMars.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -118,6 +132,7 @@ public class MainActivity extends ActionBarActivity {
             }
         });
     }
+
 
 
     @Override

@@ -8,12 +8,14 @@ public class Player
     private int uec = 0;
     private Ship pShip;
     private String name;
+    private String location;
 
     Player(int uecin, Ship pShip, String name)
     {
         uec = uecin;
         this.pShip = pShip;
         this.name = name;
+        location = "Earth";
     }
 
 
@@ -40,4 +42,19 @@ public class Player
         this.uec = this.uec + uec;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getLocation() {
+        return location;
+    }
 }
