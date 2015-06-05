@@ -4,9 +4,66 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.mvhwhinnery.spacetrucker.Store">
+    tools:context="com.example.mvhwhinnery.spacetrucker.Store"
+    android:background="#ff8b9197"
+    android:id="@+id/">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="420dp"
+        android:layout_height="250dp"
+        android:text="Weapons and Security Upgrades"
+        android:id="@+id/weaponButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="420dp"
+        android:layout_height="250dp"
+        android:text="Upgrade Cargo Space"
+        android:id="@+id/cargoButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amount Upgraded:"
+        android:id="@+id/textView"
+        android:layout_above="@+id/weaponButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amount Upgraded:"
+        android:id="@+id/textView3"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/weaponButton"
+        android:layout_toEndOf="@+id/weaponButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="some#"
+        android:id="@+id/weaponUp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="some#"
+        android:id="@+id/cargoUp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
 
 </RelativeLayout>
