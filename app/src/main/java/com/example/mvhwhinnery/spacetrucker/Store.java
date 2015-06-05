@@ -1,9 +1,17 @@
 package com.example.mvhwhinnery.spacetrucker;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 
 public class Store extends ActionBarActivity {
@@ -12,6 +20,21 @@ public class Store extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
+
+
+        //cargoUpgradeButton
+        final Button cargo = (Button)findViewById(R.id.cargoButton);
+        cargo.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                TextView cargoNum = (TextView)findViewById(R.id.cargoUp);
+                String temp = cargoNum.toString();
+                int cargospace = Integer.parseInt(temp) + 10; //adding 10 to the Cargo Space
+                cargoNum.setText(cargospace);
+            }
+        });
     }
 
 
