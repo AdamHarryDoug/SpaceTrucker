@@ -57,4 +57,5 @@ public class Player
     public String getLocation() {
         return location;
     }
+
 }

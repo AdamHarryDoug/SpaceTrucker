@@ -29,8 +29,9 @@
         android:gravity="left"
         android:textColor="#ffffffff"
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/Mars"
-        android:layout_marginRight="42dp" />
+
+        android:layout_marginRight="42dp"
+        android:layout_marginLeft="435dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -78,8 +79,9 @@
         android:text="Ryan Olson"
         android:id="@+id/playerName"
         android:textColor="#ffffffff"
-        android:layout_above="@+id/Purple"
-        android:layout_toRightOf="@+id/Red" />
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Red"
+        android:layout_toEndOf="@+id/Red" />
 
     <Button
         android:layout_width="80dp"
@@ -89,11 +91,12 @@
         android:background="#00ffffff"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:textColor="#ffffffff"
-        android:layout_marginEnd="65dp"
         android:layout_alignWithParentIfMissing="false"
-        android:layout_marginBottom="62dp"
-        android:layout_above="@+id/Mars"
-        android:layout_alignRight="@+id/textView4" />
+
+        android:layout_marginTop="275dp"
+
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
 
     <Button
         style="@style/Widget.AppCompat.Button.Borderless"
@@ -104,8 +107,8 @@
         android:background="#00ffffff"
         android:textColor="#ffffffff"
         android:layout_below="@+id/textView2"
-        android:layout_alignRight="@+id/textView5"
-        android:layout_alignEnd="@+id/textView5" />
+        android:layout_alignRight="@+id/money"
+        android:layout_alignEnd="@+id/money" />
 
     <Button
         style="@style/Widget.AppCompat.Button.Borderless"
@@ -115,10 +118,11 @@
         android:id="@+id/Earth"
         android:background="#00ffffff"
         android:textColor="#ffffffff"
-        android:layout_marginStart="43dp"
-        android:layout_alignTop="@+id/Purple"
-        android:layout_alignRight="@+id/Mars"
-        android:layout_marginRight="43dp" />
+        android:layout_below="@+id/textView7"
+        android:layout_toLeftOf="@+id/ship"
+        android:layout_toStartOf="@+id/ship"
+        android:layout_marginRight="105dp"
+        android:layout_marginEnd="105dp" />
 
     <Button
         style="@style/Widget.AppCompat.Button.Borderless"
@@ -127,10 +131,9 @@
         android:text="Marsy"
         android:id="@+id/Mars"
         android:background="#00ffffff"
-        android:layout_marginEnd="30dp"
         android:layout_above="@+id/button3"
-        android:layout_toLeftOf="@+id/textView4"
-        android:layout_marginRight="71dp" />
+        android:layout_alignLeft="@+id/Earth"
+        android:layout_alignStart="@+id/Earth" />
 
     <Button
         style="@style/Widget.AppCompat.Button.Borderless"
