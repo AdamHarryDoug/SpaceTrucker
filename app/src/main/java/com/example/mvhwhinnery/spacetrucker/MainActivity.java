@@ -30,7 +30,7 @@ public class MainActivity extends ActionBarActivity {
     private Planet p4 = new Planet("Woodlands", "lumber",null);
     private Planet p5 = new Planet("Mines", "minerals", null);
     private Ship pShip = new Ship("Van",300,2,300,null);
-    private Player player = new Player(10000,pShip,sharedPreferences.getString("name",""));
+    public Player player = new Player(10000,pShip,sharedPreferences.getString("name",""));
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
