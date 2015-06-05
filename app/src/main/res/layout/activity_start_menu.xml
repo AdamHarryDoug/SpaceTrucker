@@ -12,17 +12,6 @@
     android:id="@+id/backround"
     android:background="@drawable/spaceship1">
 
-    <TextView
-        android:text="Space Trucker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="60dp"
-        android:gravity="center"
-        android:textColor="#ffffffff"
-        android:id="@+id/textView"
-        android:background="#ff000000"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
     <Button
         android:id="@+id/btnNew"
         android:layout_width="280dp"
@@ -36,7 +25,7 @@
         android:visibility="invisible" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="Load Game"
         android:id="@+id/button"
@@ -50,7 +39,7 @@
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Pilot Name"
+        android:hint="Pilot Name"
         android:ems="10"
         android:id="@+id/editText"
         android:background="#ffffffff"
