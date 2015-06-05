@@ -29,6 +29,12 @@ public class MainActivity extends ActionBarActivity {
     private Planet p3 = new Planet("SmokeyTown", "industrial", null);
     private Planet p4 = new Planet("Woodlands", "lumber",null);
     private Planet p5 = new Planet("Mines", "minerals", null);
+
+    private Cargo wood = new Cargo("wood",75);
+    private Cargo water = new Cargo("water", 100);
+    private Cargo crops = new Cargo("crops", 75);
+    private Cargo minerals = new Cargo("minerals",150);
+    private Cargo industrial = new Cargo("industrial", 125);
     private Ship pShip = new Ship("Van",300,2,300,null);
     private Player player = new Player(10000,pShip,sharedPreferences.getString("name",""));
     @Override

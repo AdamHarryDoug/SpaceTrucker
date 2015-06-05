@@ -1,5 +1,7 @@
 package com.example.mvhwhinnery.spacetrucker;
 
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
 /**
@@ -41,14 +43,40 @@ public class Planet
         return spec;
     }
 
-    public void addCargo(ArrayList<Cargo> cargoin) {
+    public ArrayList addCargo(ArrayList<Cargo> cargoin) {
         ArrayList<Cargo> temp;
         temp = getCargo();
         for (int i = 0; i < cargoin.size(); i++) {
                 temp.add(cargoin.get(i));
                 setCargo(temp);
          }
+        return temp;
+    } //adds cargo to planet
 
-
+    public ArrayList removeCargo(String type) //removes cargo from planet
+    {
+        ArrayList<Cargo> temp;
+        temp = getCargo();
+        int num = 0;
+        for (int i = 0; i < temp.size(); i++) {
+            if (temp.get(i).getcName().equalsIgnoreCase(type))
+                num++;
+        }
+        if (num > 10)
+        {
+            for (int i = 0; i < temp.size(); i++) {
+                if (temp.get(i).getcName().equalsIgnoreCase(type)) {
+                    temp.remove(i);
+                    i--;
+                    num--;
+                }
+                if (num < 0)
+                    break;
+            }
+        }
+        //else
+        //    Toast.makeText(MainActivity,"No cargo in your bay.",Toast.LENGTH_SHORT).show();
+        return temp;
     }
+
 }
