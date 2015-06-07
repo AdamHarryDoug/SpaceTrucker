@@ -69,13 +69,13 @@ public class MainActivity extends ActionBarActivity {
                 //MenuInflater menuInflater = popupMenu.getMenuInflater();
                 popupMenu.inflate(R.menu.menu_main);
                 popupMenu.show();
-                //popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
-                //    @Override
-                //    public boolean onMenuItemClack(MenuItem item){
-                //        Toast.makeText(getApplicationContext().item.toString(), Toast.LENGTH_SHORT).show();
-                //        return false;
-                //    }
-                //});
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item){
+                        Toast.makeText(getApplicationContext(),"You have traded cargo", Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
             }
         });
         final Button popupEarth = (Button)findViewById(R.id.Earth);
@@ -86,13 +86,13 @@ public class MainActivity extends ActionBarActivity {
                 //MenuInflater menuInflater = popupMenu.getMenuInflater();
                 popupMenu.inflate(R.menu.menu_main);
                 popupMenu.show();
-                //popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
-                //    @Override
-                //    public boolean onMenuItemClack(MenuItem item){
-                //        Toast.makeText(getApplicationContext().item.toString(), Toast.LENGTH_SHORT).show();
-                //        return false;
-                //    }
-                //});
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item){
+                        Toast.makeText(getApplicationContext(),"You have traded cargo", Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
             }
         });
         final Button popupRed = (Button)findViewById(R.id.Red);
@@ -103,13 +103,13 @@ public class MainActivity extends ActionBarActivity {
                 //MenuInflater menuInflater = popupMenu.getMenuInflater();
                 popupMenu.inflate(R.menu.menu_main);
                 popupMenu.show();
-                //popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
-                //    @Override
-                //    public boolean onMenuItemClack(MenuItem item){
-                //        Toast.makeText(getApplicationContext().item.toString(), Toast.LENGTH_SHORT).show();
-                //        return false;
-                //    }
-                //});
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item){
+                        Toast.makeText(getApplicationContext(),"You have traded cargo", Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
             }
         });
         final Button popupGreen = (Button)findViewById(R.id.Green);
@@ -120,13 +120,13 @@ public class MainActivity extends ActionBarActivity {
                 //MenuInflater menuInflater = popupMenu.getMenuInflater();
                 popupMenu.inflate(R.menu.menu_main);
                 popupMenu.show();
-                //popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
-                //    @Override
-                //    public boolean onMenuItemClack(MenuItem item){
-                //        Toast.makeText(getApplicationContext().item.toString(), Toast.LENGTH_SHORT).show();
-                //        return false;
-                //    }
-                //});
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item){
+                        Toast.makeText(getApplicationContext(),"You have traded cargo", Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
             }
         });
         final Button popupPurple = (Button)findViewById(R.id.Purple);
@@ -137,13 +137,13 @@ public class MainActivity extends ActionBarActivity {
                 //MenuInflater menuInflater = popupMenu.getMenuInflater();
                 popupMenu.inflate(R.menu.menu_main);
                 popupMenu.show();
-                //popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
-                //    @Override
-                //    public boolean onMenuItemClack(MenuItem item){
-                //        Toast.makeText(getApplicationContext().item.toString(), Toast.LENGTH_SHORT).show();
-                //        return false;
-                //    }
-                //});
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item){
+                        Toast.makeText(getApplicationContext(),"You have traded cargo", Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
             }
         });
     }
