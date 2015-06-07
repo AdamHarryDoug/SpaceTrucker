@@ -32,7 +32,7 @@ public class Store extends ActionBarActivity {
                 int weaponNum = Integer.parseInt(temp) + 10; //adding 10 to the Cargo Space
                 weaponNums.setText(weaponNum);
                 Toast toast = new Toast (getApplicationContext());
-                toast.makeText(Store.this,"Weapons Upgraded",toast.LENGTH_SHORT);
+                toast.makeText(Store.this,"Weapons Upgraded",toast.LENGTH_SHORT).show();
             }
         });
 
@@ -48,7 +48,7 @@ public class Store extends ActionBarActivity {
                 int cargospace = Integer.parseInt(temp) + 10; //adding 10 to the Cargo Space
                 cargoNum.setText(cargospace);
                 Toast toast = new Toast (getApplicationContext());
-                toast.makeText(Store.this, "Cargo Space Upgraded", toast.LENGTH_SHORT);
+                toast.makeText(Store.this, "Cargo Space Upgraded", toast.LENGTH_SHORT).show();
             }
         });
     }
