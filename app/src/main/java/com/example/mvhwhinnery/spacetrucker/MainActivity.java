@@ -46,18 +46,11 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
+        setTexts();
         setContentView(R.layout.activity_main);
 
-        final Button popupMars = (Button)findViewById(R.id.Mars);
-        txtName = (TextView) findViewById(R.id.playerName);
-        txtMoney = (TextView) findViewById(R.id.money);
-        txtShip = (TextView) findViewById(R.id.ship);
-        txtLocation = (TextView) findViewById(R.id.location);
 
-        txtName.setText(player.getName());
-        txtMoney.setText(player.getUec());
-        txtShip.setText(player.getpShip().getsName());
-        txtLocation.setText(player.getLocation());
+        final Button popupMars = (Button)findViewById(R.id.Mars);
 
 
 
@@ -150,6 +143,19 @@ public class MainActivity extends ActionBarActivity {
     public void setStartName(String namein)
     {
         player.setName(namein);
+    }
+    public void setTexts()
+    {
+        txtName = (TextView) findViewById(R.id.playerName);
+        txtMoney = (TextView) findViewById(R.id.money);
+        txtShip = (TextView) findViewById(R.id.ship);
+        txtLocation = (TextView) findViewById(R.id.location);
+
+        txtName.setText(player.getName());
+        txtMoney.setText(player.getUec());
+        txtShip.setText(player.getpShip().getsName());
+        txtLocation.setText(player.getLocation());
+
     }
 
 
