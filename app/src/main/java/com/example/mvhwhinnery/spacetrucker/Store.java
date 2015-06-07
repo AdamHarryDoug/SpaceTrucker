@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class Store extends ActionBarActivity {
@@ -30,6 +31,8 @@ public class Store extends ActionBarActivity {
                 String temp = weaponNums.toString();
                 int weaponNum = Integer.parseInt(temp) + 10; //adding 10 to the Cargo Space
                 weaponNums.setText(weaponNum);
+                Toast toast = new Toast (getApplicationContext());
+                toast.makeText(Store.this,"Weapons Upgraded",toast.LENGTH_SHORT);
             }
         });
 
@@ -44,6 +47,8 @@ public class Store extends ActionBarActivity {
                 String temp = cargoNum.toString();
                 int cargospace = Integer.parseInt(temp) + 10; //adding 10 to the Cargo Space
                 cargoNum.setText(cargospace);
+                Toast toast = new Toast (getApplicationContext());
+                toast.makeText(Store.this, "Cargo Space Upgraded", toast.LENGTH_SHORT);
             }
         });
     }
