@@ -158,10 +158,10 @@ public class MainActivity extends ActionBarActivity {
         txtShip = (TextView) findViewById(R.id.ship);
         txtLocation = (TextView) findViewById(R.id.location);
 
-        txtName.setText(player.getName());
-        txtMoney.setText(player.getUec());
-        txtShip.setText(player.getpShip().getsName());
-        txtLocation.setText(player.getLocation());
+        //txtName.setText(player.getName());
+        //txtMoney.setText(player.getUec());
+        //txtShip.setText(player.getpShip().getsName());
+        //txtLocation.setText(player.getLocation());
 
     }
 
