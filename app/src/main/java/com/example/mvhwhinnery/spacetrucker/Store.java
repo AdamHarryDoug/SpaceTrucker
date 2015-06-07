@@ -20,6 +20,7 @@ public class Store extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
+
         //weaponUpgradeButton
         final Button weapon = (Button)findViewById(R.id.weaponButton);
         weapon.setOnClickListener(new View.OnClickListener() {

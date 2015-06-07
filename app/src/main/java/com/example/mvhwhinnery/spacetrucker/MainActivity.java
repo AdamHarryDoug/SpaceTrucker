@@ -1,6 +1,7 @@
 package com.example.mvhwhinnery.spacetrucker;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -50,10 +51,22 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
 
-        final Button popupMars = (Button)findViewById(R.id.Mars);
 
 
+        final Button goToStore= (Button)findViewById(R.id.button3);
+        goToStore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, Store.class);
+                MainActivity.this.startActivity(myIntent);
+            }
+        });
 
+
+        //the following buttons are all the same.
+        //they each create a button on start up and when the onCLick method
+        //is called they bring up a popup menu featuring cargo
+        final Button popupMars = (Button)findViewById(R.id.Mars); //finds the button ID in xml file
         popupMars.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
