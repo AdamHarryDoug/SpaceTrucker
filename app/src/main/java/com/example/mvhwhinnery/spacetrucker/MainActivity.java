@@ -18,11 +18,11 @@ import android.widget.Toast;
 public class MainActivity extends ActionBarActivity {
 
 
-    SharedPreferences sharedPreferences = getSharedPreferences("data",Context.MODE_PRIVATE);
-    private TextView txtName =(TextView) findViewById(R.id.playerName);
-    private TextView txtMoney = (TextView) findViewById(R.id.money);
-    private TextView txtShip = (TextView) findViewById(R.id.ship);
-    private TextView txtLocation = (TextView) findViewById(R.id.location);
+   // SharedPreferences sharedPreferences = getSharedPreferences("data",Context.MODE_PRIVATE);
+    private TextView txtName;
+    private TextView txtMoney;
+    private TextView txtShip;
+    private TextView txtLocation;
 
     private Planet p1 = new Planet("Aquarius","water",null);
     private Planet p2 = new Planet("Golden pastures", "crops", null);
@@ -35,8 +35,13 @@ public class MainActivity extends ActionBarActivity {
     private Cargo crops = new Cargo("crops", 75);
     private Cargo minerals = new Cargo("minerals",150);
     private Cargo industrial = new Cargo("industrial", 125);
+    private Cargo cargo = new Cargo("cargo",100);
+
     private Ship pShip = new Ship("Van",300,2,300,null);
-    private Player player = new Player(10000,pShip,sharedPreferences.getString("name",""));
+
+
+    private Player player = new Player(10000,pShip,null);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +49,10 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         final Button popupMars = (Button)findViewById(R.id.Mars);
+        txtName = (TextView) findViewById(R.id.playerName);
+        txtMoney = (TextView) findViewById(R.id.money);
+        txtShip = (TextView) findViewById(R.id.ship);
+        txtLocation = (TextView) findViewById(R.id.location);
 
         txtName.setText(player.getName());
         txtMoney.setText(player.getUec());
@@ -137,6 +146,10 @@ public class MainActivity extends ActionBarActivity {
                 //});
             }
         });
+    }
+    public void setStartName(String namein)
+    {
+        player.setName(namein);
     }
 
 
