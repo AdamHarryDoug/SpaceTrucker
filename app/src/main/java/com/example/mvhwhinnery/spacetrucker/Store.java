@@ -20,7 +20,17 @@ public class Store extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
-
+        //weaponUpgradeButton
+        final Button weapon = (Button)findViewById(R.id.weaponButton);
+        weapon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView weaponNums = (TextView) findViewById(R.id.weaponUp);
+                String temp = weaponNums.toString();
+                int weaponNum = Integer.parseInt(temp) + 10; //adding 10 to the Cargo Space
+                weaponNums.setText(weaponNum);
+            }
+        });
 
         //cargoUpgradeButton
         final Button cargo = (Button)findViewById(R.id.cargoButton);
