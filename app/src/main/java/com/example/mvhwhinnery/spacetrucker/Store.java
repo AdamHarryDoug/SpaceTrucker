@@ -36,6 +36,15 @@ public class Store extends ActionBarActivity {
             }
         });
 
+        final Button returnTo = (Button)findViewById(R.id.returnTo);
+        returnTo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(Store.this, MainActivity.class);
+                Store.this.startActivity(myIntent);
+            }
+        });
+
         //cargoUpgradeButton
         final Button cargo = (Button)findViewById(R.id.cargoButton);
         cargo.setOnClickListener(new View.OnClickListener()
