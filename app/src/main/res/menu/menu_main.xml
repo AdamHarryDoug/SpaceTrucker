@@ -5,14 +5,11 @@
 
     <item
         android:id="@+id/item1"
-        android:title= "@string/wood"
+        android:title= "Buy 10 Cargo"
         />
     <item
         android:id="@+id/item2"
-        android:title="Item2"
+        android:title="Sell 10 Cargo"
         />
-    <item
-        android:id="@+id/item3"
-        android:title="Item3"
-        />
+
 </menu>

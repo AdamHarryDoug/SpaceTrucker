@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class Store extends ActionBarActivity {
@@ -21,6 +22,28 @@ public class Store extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
 
+        //weaponUpgradeButton
+        final Button weapon = (Button)findViewById(R.id.weaponButton);
+        weapon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView weaponNums = (TextView) findViewById(R.id.weaponUp);
+                String temp = weaponNums.toString();
+                int weaponNum = Integer.parseInt(temp) + 10; //adding 10 to the Cargo Space
+                weaponNums.setText(weaponNum);
+                Toast toast = new Toast (getApplicationContext());
+                toast.makeText(Store.this,"Weapons Upgraded",toast.LENGTH_SHORT).show();
+            }
+        });
+
+        final Button returnTo = (Button)findViewById(R.id.returnTo);
+        returnTo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(Store.this, MainActivity.class);
+                Store.this.startActivity(myIntent);
+            }
+        });
 
         //cargoUpgradeButton
         final Button cargo = (Button)findViewById(R.id.cargoButton);
@@ -33,6 +56,8 @@ public class Store extends ActionBarActivity {
                 String temp = cargoNum.toString();
                 int cargospace = Integer.parseInt(temp) + 10; //adding 10 to the Cargo Space
                 cargoNum.setText(cargospace);
+                Toast toast = new Toast (getApplicationContext());
+                toast.makeText(Store.this, "Cargo Space Upgraded", toast.LENGTH_SHORT).show();
             }
         });
     }

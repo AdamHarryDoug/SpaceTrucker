@@ -48,29 +48,7 @@ public class Planet
                 temp.add(cargoin.get(i));
                 setCargo(temp);
          }
-    }
 
-    public void removeCargo(String type, Planet p)
-    {
-        int num = 0;
-        for (int i = 0; i < cargo.size(); i++) {
-            if (cargo.get(i).getcName().equalsIgnoreCase(type))
-            {
-                num++;
-            }
-        }
-        if (num > 10)
-        {
-            for (int i = 0; i < cargo.size(); i++) {
-                if (cargo.get(i).getcName().equalsIgnoreCase(type))
-                {
-                    cargo.remove(i);
-                    num--;
-                }
-                if (num < 0)
-                    break;
-            }
 
-        }
     }
 }

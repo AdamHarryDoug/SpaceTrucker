@@ -22,6 +22,7 @@ public class StartMenu extends ActionBarActivity {
     RelativeLayout back;
     public  String playerName;
     EditText txtEdit;
+    MainActivity start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +38,14 @@ public class StartMenu extends ActionBarActivity {
         btnNew.setOnClickListener(new View.OnClickListener() {
              @Override
                   public void onClick(View v) {
-                 SharedPreferences prefs = getSharedPreferences("data", Context.MODE_PRIVATE);
-                 SharedPreferences.Editor editor = getSharedPreferences("data",Context.MODE_PRIVATE).edit();
-                 editor.putString("name",txtEdit.getText().toString());
-                 playerName = txtEdit.getText().toString();
-                       Intent myIntent = new Intent(StartMenu.this, MainActivity.class);
-                       StartMenu.this.startActivity(myIntent);
+                 //SharedPreferences prefs = getSharedPreferences("data", Context.MODE_PRIVATE);
+                // SharedPreferences.Editor editor = getSharedPreferences("data",Context.MODE_PRIVATE).edit();
+                // editor.putString("name",txtEdit.getText().toString());
+
+                 //playerName = txtEdit.getText().toString();
+                 //start.setStartName(playerName);
+                 Intent myIntent = new Intent(StartMenu.this, MainActivity.class);
+                 StartMenu.this.startActivity(myIntent);
 
                   }
              }
