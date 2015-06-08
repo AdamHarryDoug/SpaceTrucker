@@ -29,8 +29,8 @@ public class Store extends ActionBarActivity {
             public void onClick(View v) {
                 TextView weaponNums = (TextView) findViewById(R.id.weaponUp);
                 String temp = weaponNums.toString();
-                int weaponNum = Integer.parseInt(temp) + 10; //adding 10 to the Cargo Space
-                weaponNums.setText(weaponNum);
+                //int weaponNum = Integer.parseInt(temp) + 10; //adding 10 to the Cargo Space
+                //weaponNums.setText(weaponNum);
                 Toast toast = new Toast (getApplicationContext());
                 toast.makeText(Store.this,"Weapons Upgraded",toast.LENGTH_SHORT).show();
             }
@@ -54,8 +54,8 @@ public class Store extends ActionBarActivity {
             {
                 TextView cargoNum = (TextView)findViewById(R.id.cargoUp);
                 String temp = cargoNum.toString();
-                int cargospace = Integer.parseInt(temp) + 10; //adding 10 to the Cargo Space
-                cargoNum.setText(cargospace);
+                //int cargospace = Integer.parseInt(temp) + 10; //adding 10 to the Cargo Space
+                //cargoNum.setText(cargospace);
                 Toast toast = new Toast (getApplicationContext());
                 toast.makeText(Store.this, "Cargo Space Upgraded", toast.LENGTH_SHORT).show();
             }
