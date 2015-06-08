@@ -18,13 +18,13 @@ import android.widget.RelativeLayout;
 
 public class StartMenu extends ActionBarActivity {
 
-    Button btnNew;
+    Button btnNew;                      // variables
     RelativeLayout back;
     public  String playerName;
     EditText txtEdit;
     MainActivity start;
 
-    @Override
+    @Override   // whent the activity is created
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
@@ -45,7 +45,7 @@ public class StartMenu extends ActionBarActivity {
                  //playerName = txtEdit.getText().toString();
                  //start.setStartName(playerName);
                  Intent myIntent = new Intent(StartMenu.this, MainActivity.class);
-                 StartMenu.this.startActivity(myIntent);
+                 StartMenu.this.startActivity(myIntent); // moves to the main activity
 
                   }
              }

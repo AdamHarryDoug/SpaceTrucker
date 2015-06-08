@@ -5,12 +5,12 @@ package com.example.mvhwhinnery.spacetrucker;
  */
 public class Player
 {
-    private int uec = 0;
+    private int uec = 0;  // private variables
     private Ship pShip;
     private String name;
     private String location;
 
-    Player(int uecin, Ship pShip, String name)
+    Player(int uecin, Ship pShip, String name) //Constructor
     {
         uec = uecin;
         this.pShip = pShip;
@@ -20,7 +20,7 @@ public class Player
 
 
 
-    public void setUec(int uecin)
+    public void setUec(int uecin)     // Get and Set Methods
     {uec = uecin;}
     public int getUec()
     {return uec;}

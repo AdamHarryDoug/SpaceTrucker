@@ -7,11 +7,11 @@ import java.util.ArrayList;
  */
 public class Ship
 {
-    private String sName = "";
+    private String sName = "";                 //private variables
     private int cargoSize,defence,fuel;
     ArrayList<Cargo> cargo = new ArrayList<Cargo>();
 
-    Ship(String name, int cargoSize,int defence,int fuel, ArrayList<Cargo> cargo)
+    Ship(String name, int cargoSize,int defence,int fuel, ArrayList<Cargo> cargo) // constrictor
     {
         this.sName = name;
         this.cargoSize = cargoSize;
@@ -23,7 +23,7 @@ public class Ship
 
     public void setCargoSize(int cargoSize) {
         this.cargoSize = cargoSize;
-    }
+    } // get and set methods
 
     public int getCargoSize() {
         return cargoSize;
@@ -73,5 +73,5 @@ public class Ship
             }
         }
 
-    }
+    } //adds cargo to ship
 }

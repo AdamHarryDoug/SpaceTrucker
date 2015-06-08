@@ -7,10 +7,10 @@ import java.util.ArrayList;
  */
 public class Planet
 {
-    private String name,spec;
+    private String name,spec;                      //private variables
     ArrayList<Cargo> cargo = new ArrayList<Cargo>();
 
-    Planet(String name,String spec, ArrayList<Cargo> cargo)
+    Planet(String name,String spec, ArrayList<Cargo> cargo) //constructor
     {
         this.name = name;
         this.spec = spec;
@@ -19,7 +19,7 @@ public class Planet
 
     public void setCargo(ArrayList<Cargo> cargo) {
         this.cargo = cargo;
-    }
+    } // get and set methods
 
     public ArrayList<Cargo> getCargo() {
         return cargo;
@@ -48,7 +48,29 @@ public class Planet
                 temp.add(cargoin.get(i));
                 setCargo(temp);
          }
+    } // adds cargo to planet
 
+    public void removeCargo(String type, Planet p) // removes cargo from planet
+    {
+        int num = 0;
+        for (int i = 0; i < cargo.size(); i++) {
+            if (cargo.get(i).getcName().equalsIgnoreCase(type))
+            {
+                num++;
+            }
+        }
+        if (num > 10)
+        {
+            for (int i = 0; i < cargo.size(); i++) {
+                if (cargo.get(i).getcName().equalsIgnoreCase(type))
+                {
+                    cargo.remove(i);
+                    num--;
+                }
+                if (num < 0)
+                    break;
+            }
 
+        }
     }
 }

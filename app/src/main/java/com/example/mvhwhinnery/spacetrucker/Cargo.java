@@ -7,11 +7,11 @@ import java.util.ArrayList;
  */
 public class Cargo
 {
-    private String cName;
+    private String cName;     // variables
     private int basePrice;
     private int realPrice;
 
-    Cargo(String cName, int basePrice)
+    Cargo(String cName, int basePrice) // constructor
     {
         this.cName = cName;
         this.basePrice = basePrice;
@@ -20,7 +20,7 @@ public class Cargo
 
     public void setBasePrice(int basePrice) {
         this.basePrice = basePrice;
-    }
+    } // get and set methods
 
     public void setcName(String cName) {
         this.cName = cName;
@@ -42,7 +42,7 @@ public class Cargo
         return realPrice;
     }
 
-    public void calculateRealPrice(ArrayList<Cargo> cargos,String name)
+    public void calculateRealPrice(ArrayList<Cargo> cargos,String name)  // calculates dynamic price
     {
         int amount =0;
         for (int i = 0;i < cargos.size(); i++)

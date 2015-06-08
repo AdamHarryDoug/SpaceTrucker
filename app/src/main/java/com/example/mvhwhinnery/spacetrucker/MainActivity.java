@@ -20,7 +20,7 @@ public class MainActivity extends ActionBarActivity {
 
 
    // SharedPreferences sharedPreferences = getSharedPreferences("data",Context.MODE_PRIVATE);
-    private TextView txtName;
+    private TextView txtName;       //all variables are here
     private TextView txtMoney;
     private TextView txtShip;
     private TextView txtLocation;
@@ -37,16 +37,14 @@ public class MainActivity extends ActionBarActivity {
 
     private Player player = new Player(10000,pShip,null);
 
-    @Override
+    @Override // happens when the activity is created
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setTexts();
         setContentView(R.layout.activity_main);
 
-
-
-
+          // moves player to store activity
         final Button goToStore= (Button)findViewById(R.id.button3);
         goToStore.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -150,7 +148,8 @@ public class MainActivity extends ActionBarActivity {
     public void setStartName(String namein)
     {
         player.setName(namein);
-    }
+    } // sets the player name
+    // changes the texts but this did not work. We could not change the labels
     public void setTexts()
     {
         txtName = (TextView) findViewById(R.id.playerName);

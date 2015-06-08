@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class CargoBay extends ActionBarActivity {
+public class CargoBay extends ActionBarActivity { // activity does not do anything :(
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
